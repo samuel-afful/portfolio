@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+
+.logo{
+  width: 10.0rem;
+  height: 3.0rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: sans-serif;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-nav > li > a{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: white !important;
+  border-top: 0.18rem solid rgba(255, 255, 255, 0);
+}
+
+.navbar-nav > li > a:focus{
+  border-top: 0.18rem solid orange;
+}
+
+.navbar-nav > li > a:hover{
+  border-top: 0.18rem solid orange;
+}
+
+.header-wrapper{
+  position: relative;
+  background: url(./images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+  height: 90vh;
+}
+
+.main-info{
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 7rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.main-info h1{
+  color: rgb(173, 169, 169);
+  text-transform: uppercase;
+  font-weight: 5rem;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.typed-text{
+  
+  color: orange;
+  font-size: 2rem;
+}
+
+.btn-main-offer {
+  border: solid 0.05rem rgb(172, 169, 169);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: orange;
+  margin: 2rem;
+}
+
+ .btn-main-offer:hover{
+  color: orange;
+}
+#tsparticles{
+  position: absolute;
 }
